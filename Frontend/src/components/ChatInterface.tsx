@@ -18,7 +18,7 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({ user, onLeave }) =
   const [typingUsers, setTypingUsers] = useState<string[]>([]);
 
   useEffect(() => {
-    const newSocket = io('http://localhost:3000');
+    const newSocket = io('https://cchat25.onrender.com');
     setSocket(newSocket);
 
     newSocket.on('connect', () => {
