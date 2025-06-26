@@ -7,7 +7,7 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://cchat25.vercel.app/",
+    origin: "https://cchat25.vercel.app",
     methods: ["GET", "POST"]
   }
 });
